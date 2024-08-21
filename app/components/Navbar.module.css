@@ -1,0 +1,96 @@
+/* components/Navbar.module.css */
+.navbar {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+  }
+  
+  .navItems {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    margin-left: 20px;
+  }
+  
+  .navItem a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .dropdownToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .dropdownMenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  .dropdownMenu li {
+    margin: 0;
+  }
+  
+  .dropdownMenu li a {
+    padding: 10px;
+    color: white;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdownMenu li a:hover {
+    background-color: #555;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navItems {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .navItems.open {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
